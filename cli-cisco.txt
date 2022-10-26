@@ -1,1 +1,5 @@
-
+Tiga Mode Dalam CLI Cisco :
+1. User Exec Mode 
+2. Privilage Exec Mode
+3. Global Konfigurasi Mode
+.
