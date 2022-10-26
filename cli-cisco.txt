@@ -3,3 +3,21 @@ Tiga Mode Dalam CLI Cisco :
 2. Privilage Exec Mode
 3. Global Konfigurasi Mode
 .
+[USER EXEC MODE]
+>enable //untuk masuk kedalam privilage Mode
+>exit //untuk keluar dari user exec mode
+.
+[Privilage Exec Mode]
+#show running-config //untuk melihat pengaturan yang sudah di set pada RAM
+#show startup-config //untuk melihat pengaturan yang sudah di set pada NVRAM
+#show ip interface brief //untuk melihat ip addres dan status interface
+#configure terminal //untuk masuk kedalam global konfigurasi mode
+#exit //untuk keluar dari privilage exec mode
+.
+[GLOBAL KONFIGURASI MODE]
+#hostname [nama router/switch] //digunakan untuk memberikan identitas pada perangkat cisco (switch/router)
+#enable password [kata sandi sesuai keinginan kita] //digunakan untuk memberikan password pada privilage exec mode
+#enable secret [kata sandi sesuai keinginan kita] //digunakan untuk mengenkripsi passwoord privilage exec mode
+#exit //untuk keluar dari global konfigurasi mode
+
+
