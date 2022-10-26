@@ -18,6 +18,10 @@ Tiga Mode Dalam CLI Cisco :
 #hostname [nama router/switch] //digunakan untuk memberikan identitas pada perangkat cisco (switch/router)
 #enable password [kata sandi sesuai keinginan kita] //digunakan untuk memberikan password pada privilage exec mode
 #enable secret [kata sandi sesuai keinginan kita] //digunakan untuk mengenkripsi passwoord privilage exec mode
+#ip address []
+#line console 0 //perintah untuk masuk ke konsol
+#password [kata sandi sesuai keinginan kita] //digunakan untuk memberikan password pada user exec mode
+#login //untuk mengaktifkan password pada exec mode
 #exit //untuk keluar dari global konfigurasi mode
 
 
