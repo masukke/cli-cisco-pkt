@@ -10,6 +10,7 @@ Tiga Mode Dalam CLI Cisco :
 [Privilage Exec Mode]
 #show running-config //untuk melihat pengaturan yang sudah di set pada RAM
 #show startup-config //untuk melihat pengaturan yang sudah di set pada NVRAM
+#copy running-config startup-config //untuk menyalin pengaturan dari RAM ke NVRAM
 #show ip interface brief //untuk melihat ip addres dan status interface
 #configure terminal //untuk masuk kedalam global konfigurasi mode
 #exit //untuk keluar dari privilage exec mode
@@ -18,7 +19,10 @@ Tiga Mode Dalam CLI Cisco :
 #hostname [nama router/switch] //digunakan untuk memberikan identitas pada perangkat cisco (switch/router)
 #enable password [kata sandi sesuai keinginan kita] //digunakan untuk memberikan password pada privilage exec mode
 #enable secret [kata sandi sesuai keinginan kita] //digunakan untuk mengenkripsi passwoord privilage exec mode
-#ip address []
+#interface fastEthernet 0/0 //digunakan untuk masuk ke interface router 0/0
+#interface fastEthernet 1/0 //digunakan untuk masuk ke interface router 1/0
+#ip address 192.168.10.1 255.255.255.0 //untuk menetapkan ip address pada salah satu interface router
+#no shutdown //untuk mengaktifkan interface 
 #line console 0 //perintah untuk masuk ke konsol
 #password [kata sandi sesuai keinginan kita] //digunakan untuk memberikan password pada user exec mode
 #login //untuk mengaktifkan password pada exec mode
